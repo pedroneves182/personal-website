@@ -1,6 +1,6 @@
-@use 'base';
+@use 'base' as b;
 
 h1 {
-    font-size: 5em;
-    color: $primary-color;
+    font-size: 3em;
+    color: b.$secondary-color;
 }

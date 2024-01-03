@@ -1,4 +1,22 @@
+// COLORS
 $primary-color: #003566;
 $secondary-color: #ffd60a;
 $alternative-color: #001d3d;
 $dark-blue: #000814;
+$light-blue: hsl(216, 90%, 50%);
+
+// FONTS
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $dark-blue;
+    color: hsl(225, 73%, 57%);
+    font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
