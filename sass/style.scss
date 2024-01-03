@@ -1,6 +1,1 @@
-@use 'base' as b;
-
-h1 {
-    font-size: 3em;
-    color: b.$secondary-color;
-}
+@forward 'layout';
