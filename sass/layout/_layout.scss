@@ -84,14 +84,87 @@
     padding-bottom: 90px;
 
     &__title {
+        position: relative;
         font-size: 7rem;
         letter-spacing: .25rem;
-        color: $secondary-color;
+        // color: $secondary-color;
+        color: white;
+        animation: fadeIn 3s;
+        // text-shadow: 0 1px 5px $light-blue;
+        // border-bottom: 2px solid $secondary-color;
+        // border-color: $secondary-color;
+        // padding-bottom: 5px;
+        // text-decoration: underline solid $secondary-color 3px;
+        // text-underline-offset: 12px;
+
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 3px;
+            background: $secondary-color;
+            position: absolute;
+            left: 0;
+            bottom: 5px;
+            animation: 2s ease-out 0s 1 fadeInFromLeft;
+        }
     }
 
     &__subtitle {
-        color: white;
+        padding-top: .5rem;
+        color: $grey;
         letter-spacing: .25rem;
         font-size: 1.5rem;
     }
+}
+
+.stack {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2%;
+
+    &__tech {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .25rem;
+    }
+
+    &__icon {
+        background-color: white;
+        width: 5rem;
+        border-radius: 1rem;
+        // border: 2px solid $light-blue;
+        box-shadow: 0 0 5px $secondary-color;
+
+        &--padding {
+            padding: .25rem;
+        }
+    }
+
+    &__title {
+        color: $grey;
+        // color: $light-blue;
+    }
+}
+
+.arrow {
+    text-align: center;
+    padding-bottom: 30px;
+
+    &__box{
+        position: relative;
+    }
+}
+
+.arrow-down {
+    border: solid $secondary-color;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 15px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    animation: MoveUpDown 2s linear infinite;
 }

@@ -1,0 +1,45 @@
+@use '../base' as *;
+
+.contact {
+    background-color: $dark-blue;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 4rem;
+    gap: 2rem;
+
+    &__title {
+        color: $light-blue;
+    }
+
+    &__form {
+        font-family: $font;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        gap: .5rem;
+    }
+
+    &__input,
+    &__textarea {
+        color: $primary-color;
+        font-family: $font;
+        font-size: 1.25rem;
+        width: 100%;
+        border-radius: .25rem;
+        padding: .25rem;
+        border: none;
+        // outline-color: $secondary-color;
+        outline-color: none;
+        box-shadow: 0 0 5px $light-blue;
+
+        &::placeholder {
+            // color: $secondary-color;
+        }
+    }
+}
