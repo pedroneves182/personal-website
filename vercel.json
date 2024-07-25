@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/bigfive-test/:path*",
+      "destination": "https://pedro-bigfive-test.vercel.app/:path*"
+    }
+  ]
+}
